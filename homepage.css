@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    background-color: #084584;
+    color: white !important;
+    font-family: Helvetica;
+}
+
+nav {
+    margin: 0;
+    width: 100%;
+    height: 69px;
+    position: fixed;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    z-index: 1;
+    background-color: 002D72;
+}
+
+nav ul {
+    margin-right: 5px;
+    padding-top: 5px;
+}
+
+nav ul li {
+    display: inline;
+    float: right;
+}
+
+nav ul li a {
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+}
+
+#logo {
+    position: absolute;
+    left: 0px;
+    top: 8px;
+}
+
+#logo img {
+    height: 50px;
+}
+
+.hero {
+    background-image: url(VCEFrontView2.jpg);
+    background-position: center;
+    height: 800px;
+    width: 1200px;
+    background-size: cover;
+    position: relative;
+    top: 70px;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+}
+
+.banner {
+    background-color: A6093D;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+}
+
+h2,
+h4 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.experiments-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.item img {
+    width: 280px;
+    height: 200px;
+    border: 10px solid transparent;
+
+    
+}
+
+.item h4 {
+    text-align: center;
+    color: #ffffff;
+}
+
+section {
+    width: 1000px;
+    position: relative;
+    top: 70px;
+    margin: 0 auto;
+}
+
+.location {
+    background-image: url("logo_2001.jpg");
+    background-size: 5%;
+    background-position: center;
+    height: 500px;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 70px;
+}
+
+.location>h2 {
+    padding: 30px;
+    color: #084584;
+    background-color: aliceblue;
+}
+
+.location-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.location-item {
+    background-color: A6093D;
+    opacity: 1;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dummy-div {
+    height: 200px;
+}
+
+footer {
+    position: relative;
+    top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 30px;
+    height: 200px;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+
+    body {
+        font-size: smaller;
+        width: 480px;
+    }
+
+    .hero {
+        width: auto;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        padding: 70px 0;
+        border: 1px solid red;
+    }
+
+    .banner {
+        width: 100%;
+        height: auto;
+        flex-shrink: 1;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    section {
+        width: auto;
+        position: static;
+    }
+
+    .location {
+        width: 100%;
+        height: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    footer {
+        width: auto;
+    }
+
+    #logo img {
+        height: 30px;
+    }
+
+    .location-item {
+        width: auto;
+        height: auto;
+        margin: 5px;
+    }
+}
